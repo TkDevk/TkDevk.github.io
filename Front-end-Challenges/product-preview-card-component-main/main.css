@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +14,20 @@
     --VeryDarkBlue: hsl(212, 21%, 14%);
     --DarkGrayishBlue: hsl(228, 12%, 48%);
     --White: hsl(0, 0%, 100%);
+    /*Active*/
+    --DarkCyanBg: hsl(158, 36%, 37%,0.9);
 }
+
+/*
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700
+
+*/
 body{
     height: 100vh;
     overflow-x: hidden;
@@ -20,64 +36,95 @@ body{
     justify-content: center;
     align-items: center;
     background: var(--Cream);
+    gap:1rem
 }
 .--card-container {
     background-color: var(--White);
     border-radius: 1rem;
     display: flex;
-    width: 50%;
-    height: 60vh;
-
+    width: 40vw;
+    height: 65vh;
+    /*Important*/
+    overflow: hidden;
 }
-.--imgage-container {
-    
-    width: 50%;
 
-    
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.--picture-container {
-    
-    
-
-}
+/*Icon 32px*/
 .--desription-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1rem;
-    gap: 1rem;
+    padding: 3rem;
     width: 50%;
+    gap:.9rem;
 }
 .--category-item-title {
     color:var(--DarkGrayishBlue);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: .7em;
+    letter-spacing: .3em;
 }
 .--item-title {
-    font-weight: 600;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.7rem;
 }
 .--text-item {
     color:var(--DarkGrayishBlue);
+    font-size: .85rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4em;
 }
 .--final-price {
     color: var(--DarkCyan);
     width: 60%;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.7rem;
 }
 .--discounted-price {
     color:var(--DarkGrayishBlue);
     width: 40%;
+    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
 }
 .--show-price{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1.5rem;
 }
 .--add-btn {
-    height: 3svh;
-    width: fit-content;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap:.7rem;
+    height: 7.5svh;
+    width: 110%;
     padding: .8rem 2rem;
+    background-color: var(--DarkCyan);
+    color:var(--White);
+    border-radius: .5rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .7em;
+    letter-spacing: .07em;
+    &:hover{
+        background-color: var(--DarkCyanBg);
+        cursor: pointer;
+    }
 }
-
-
-
-
-
+.--add-btn > picture >img{
+    font-size: .8em;
+}
 
 .attribution {
     font-size: 11px;
