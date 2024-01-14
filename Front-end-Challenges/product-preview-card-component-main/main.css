@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --DarkCyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--Cream);
+}
+.--card-container {
+    background-color: var(--White);
+    border-radius: 1rem;
+    display: flex;
+    width: 50%;
+    height: 60vh;
+
+}
+.--imgage-container {
+    
+    width: 50%;
+
+    
+}
+.--picture-container {
+    
+    
+
+}
+.--desription-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 1rem;
+    width: 50%;
+}
+.--category-item-title {
+    color:var(--DarkGrayishBlue);
+}
+.--item-title {
+    font-weight: 600;
+}
+.--text-item {
+    color:var(--DarkGrayishBlue);
+}
+.--final-price {
+    color: var(--DarkCyan);
+    width: 60%;
+}
+.--discounted-price {
+    color:var(--DarkGrayishBlue);
+    width: 40%;
+}
+.--show-price{
+    display: flex;
+}
+.--add-btn {
+    height: 3svh;
+    width: fit-content;
+    padding: .8rem 2rem;
+}
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
