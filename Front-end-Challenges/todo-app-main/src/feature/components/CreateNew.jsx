@@ -1,11 +1,8 @@
 const CreateNew = () => {
     return (
         <section className="Create-new-container">
-            <label htmlFor="cbox">
-                <input className="Input-check-box" type="checkbox" id="cbox" value="todo_checkbox" />
-                Create a new todo...
-                <span className="Check-mark"></span>
-                </label>
+            <figure className="Check-TODO"> </figure>
+                <input className="Input-check-box" type="text" id="cbox" placeholder="Create a new todo..." />
         </section>
     )
 

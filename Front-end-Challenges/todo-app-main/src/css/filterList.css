@@ -1,0 +1,23 @@
+.Footer-filter{
+    background-color: var( --VeryLightGray); 
+    display: flex;
+    justify-content: space-around;
+    padding:1rem;
+    border-bottom-left-radius:.5rem;
+    border-bottom-right-radius:.5rem;
+}
+.Justify-h6{
+    display: flex;
+    gap:.5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.Justify-h6  h6{
+    color:var(--LightGrayishBlue);
+}
+.Todos-remain{
+    color:var(--LightGrayishBlue);
+}
+.Clear-todos{
+    color:var(--LightGrayishBlue);
+}
