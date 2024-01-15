@@ -1,8 +1,18 @@
-main{
+.Body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
+    background-color: var(--VeryLightGrayishBlue);
     overflow-x: hidden;
 }
+.BackGround-image > img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+}
+.Main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

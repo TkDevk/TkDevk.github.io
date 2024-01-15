@@ -1,15 +1,20 @@
-import Theme from './feature/components/Theme'
-import CreateNew from './feature/components/CreateNew'
-import FilterList from './feature/components/ShowList'
+import ShowList from './feature/components/ShowList'
 import TodoList from './feature/components/TodoList'
+import FilterList from './feature/components/FilterList'
+import './main.css'
+
 const App = ()=>{
   return(
-    <main>
-    <TodoList>
-    <Theme />
-    <CreateNew />
+    <main className='Body'>
+      <picture className='BackGround-image'>
+        <img src="bg-desktop-light.jpg" 
+             alt="Background Image" />
+      </picture>
+      <article className='Main-container'>
+    <TodoList />
+    <ShowList />
     <FilterList />
-    </TodoList>
+    </article>
     </main>
     )}
 

@@ -3,11 +3,14 @@
 - Desktop: 1440px
 
 */
-section{
-    width: 58.6vw;
+.TODO-container{
+    width: 40vw;
     border-radius: .5rem;
     display: flex;
     flex-direction: column;
     background-color: transparent;
+    position: absolute;
+    top:8svh;
+    gap:2rem;
 }
 

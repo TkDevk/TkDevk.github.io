@@ -1,0 +1,27 @@
+.Create-new-container{
+    border-radius:.5rem;
+    background-color: var( --VeryLightGray); 
+    display: flex;
+    align-items: flex-start;
+    gap:2rem;
+    padding:1.5rem;
+
+}
+
+.Input-check-box{
+
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.Input-check-box input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+

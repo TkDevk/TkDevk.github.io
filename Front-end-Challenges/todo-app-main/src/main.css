@@ -1,11 +1,18 @@
+@import url('./css/app.css');
+@import url('./css/theme.css');
+@import url('./css/todoList.css');
+@import url('./css//showList.css');
+@import url('./css/createNew.css');
+@import url('./css/filterList.css');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 *{
     margin: 0;
     padding:0;
     border: none;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 }
-
-@import url('./css/app.css');
 :root{
 
     /*Primary*/

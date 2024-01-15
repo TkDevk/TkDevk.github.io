@@ -1,0 +1,24 @@
+.ThemeTODO{
+   background-color:transparent;
+   display: flex;
+   justify-content:space-between;
+   width: 100%;
+   padding:1rem 0;
+   &:hover{
+    cursor: pointer;
+}
+
+}
+.TitleTODO{
+    letter-spacing: .8em;
+    justify-content: flex-start;
+    color:var(--VeryLightGray);
+    text-transform:uppercase;
+    font-weight: 800;
+    font-size: 2rem;
+}
+.IconTheme{
+    justify-content: flex-end;
+    color:var(--VeryLightGray);
+    font-size: 2rem;
+}
