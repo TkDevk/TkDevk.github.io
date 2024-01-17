@@ -3,7 +3,7 @@
     flex-direction: column;
     gap:.5rem;
     min-height: 100vh;
-    background-color: var(--VeryLightGrayishBlue);
+    background-color: var(--color-bg);
     overflow-x: hidden;
 }
 .BackGround-image > img{
@@ -22,3 +22,5 @@
    bottom:0;
    position:relative;
 }
+
+

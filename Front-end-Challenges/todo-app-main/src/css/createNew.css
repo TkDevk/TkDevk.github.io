@@ -1,35 +1,50 @@
-.Create-new-container{
-    border-radius:.4rem;
-    background-color: var( --VeryLightGray); 
+.Create-new-container {
+    border-radius: .4rem;
+    background-color: var(--todo-bg);
     display: flex;
-    gap:.7rem;
-    align-items:center;
-    padding:1rem;
-}
-.Input-check-box{
-    display: flex;
-    gap:1.5rem;
-    font-size: 1em;
+    gap: .7rem;
     align-items: center;
-    color: var(--LightGrayishBlue);
-    padding:.5rem;
-    background-color: transparent;
-    outline-color: none;
-    border: none;
-    font-weight: 500;
-    
+    padding: 1rem;
 }
 
-.Check-TODO{
+.Input-check-box {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1em;
+    align-items: center;
+    color: var(--color-text);
+    padding: .5rem;
+    background-color: transparent;
+    outline-style: none;
+    border: none;
+    font-weight: 500;
+
+}
+
+.Check-TODO {
     border-radius: 1.5rem;
-    height:1.5rem;
+    height: 1.5rem;
     width: 1.5rem;
-    border: .1rem var(--LightGrayishBlue) solid;
+    border: .1rem var(--color-text-not) solid;
     background-color: transparent;
     align-self: center;
-    margin-left:.5rem ;
+    margin-left: .5rem;
+    display: flex;
     &:hover{
-        border: .2rem var(--CheckBackground) solid; 
+        border: .1rem var(--BrightBlue) solid;
         cursor: pointer;
     }
+}
+
+.Icon-Checked {
+    background: rgb(87,221,255);
+    background: linear-gradient(135deg, rgba(87,221,255,1) 30%, rgba(192,88,243,0.9724264705882353) 84%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:.7rem;
+    border-radius: 1.3rem;
+    height: 1.3rem;
+    width: 1.3rem;
+    position: relative;
 }

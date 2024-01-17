@@ -1,4 +1,3 @@
-
 const FilterList = () => {
   return (
     <footer className="Footer-filter">

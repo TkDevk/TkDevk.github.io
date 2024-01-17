@@ -12,30 +12,44 @@
     border: none;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.5s ease;
 }
 :root{
 
     /*Primary*/
     --BrightBlue: hsl(220, 98%, 61%);
-    --CheckBackground: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+    --CheckBackground: linear-gradient(150deg, hsl(192, 100%, 67%) to hsl(280, 87%, 65%));
     /*Neutral*/
 
     /*Light Theme*/
-    --VeryLightGray: hsl(0, 0%, 98%);
-    --VeryLightGrayishBlue: hsl(236, 33%, 92%);
-    --LightGrayishBlue: hsl(233, 11%, 84%);
-    --DarkGrayishBlue: hsl(236, 9%, 61%);
-    --VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+    --todo-bg: hsl(0, 0%, 98%);
+    --color-bg: hsl(236, 33%, 92%);
+    --title-color:hsl(0, 0%, 98%);
+    --color-text-not: hsl(236, 9%, 61%);
+    --color-text: hsl(234, 11%, 52%);
+    --text-hover: hsl(235, 19%, 35%);
 
-    /*Dark Theme*/
+/*CSS Variable to set theme color, it's call data-theme*/
+
+    [data-theme="dark"]{
+        --todo-bg:hsl(235, 24%, 19%);
+        --color-bg:hsl(235, 21%, 11%);
+        --color-text: hsl(234, 39%, 85%);
+        --title-color:hsl(0, 0%, 98%);
+        --color-text-not: hsl(234, 11%, 52%);
+        --text-hover: hsl(236, 33%, 92%);
+    }
+
+    /*Dark Theme
     --VeryDarkBlue: hsl(235, 21%, 11%);
-    --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
-    --LightGrayishBlue: hsl(234, 39%, 85%);
-    --LightGrayishBlueHover: hsl(236, 33%, 92%);
+    --color-bg: hsl(235, 24%, 19%);
+    --color-text: hsl(234, 39%, 85%);
     --DarkGrayishBlue: hsl(234, 11%, 52%);
     --VeryDarkGrayishBlue: hsl(233, 14%, 35%);
-    --VeryDarkGrayishBlue: hsl(237, 14%, 26%);
-    /*
+     
+   
+
+    
 
 - Font size: 18px
 
@@ -43,3 +57,5 @@
 - Weights: 400, 700
     */
 }
+
+
