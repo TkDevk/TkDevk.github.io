@@ -4,17 +4,16 @@ import ShowList from "./ShowList"
 import { useState } from "react"
 
 const TodoList = () => {
-    const [textTodo,setInputTodo] = useState("Hola");
-    const todoText=(e)=>{
-     setInputTodo(e.target.value)
+    const [inputText,setInputText] = useState("");
+    const createTodo=(e)=>{
+     setInputText(e.target.value)
+     console.log(`Parent component: ${inputText}`)
     }
-      
-
     return (
         <section className="TODO-container">
             <Theme />
-            <CreateNew todoText={todoText}/>
-            <ShowList textTodo={textTodo}/>
+            <CreateNew createTextTodo={createTodo}/>
+            <ShowList showInputText={inputText}/>
             <span className='Dragdrop'>
                 Drag and drop to reorder list
             </span>

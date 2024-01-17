@@ -1,15 +1,17 @@
 import FilterList from './FilterList'
 import { useState } from 'react'
 import PropTypes from "prop-types"
-const ListTodo = ({textTodo}) =>{
+const ListTodo = ({inputText}) =>{
+    console.log(inputText);
     const [checkClick, setCheckClick] = useState(false)
     const [deleteClick, setDeleteClick] = useState(false)
     function handleClick(){
            setCheckClick(
             prevValue => !prevValue
            )
-           
+          
     }
+    console.log(`ShowList: ${ inputText}`);
     function handleDelete(){
         setDeleteClick(
            prevValue => !prevValue
@@ -41,14 +43,19 @@ const ListTodo = ({textTodo}) =>{
             {/*If i will redender something i have to output a component*/}
             </>
     )
+  
 }
 
-const ShowList = ({textTodo}) => {
+ListTodo.propTypes = {
+    inputText: PropTypes.any,
+}
+
+const ShowList = ({showInputText:inputText}) => {
 
     return (
         <article className='Accordion-todo'>
             <ul className='TODO-list-container'>    
-               <ListTodo textTodo={textTodo}/>
+               <ListTodo inputText={inputText}/>
             </ul>
             <FilterList />
         </article>
@@ -56,9 +63,9 @@ const ShowList = ({textTodo}) => {
 
 }
 
-ShowList.propTypes = {
-    textTodo: PropTypes.any,
-  };
 
+ShowList.propTypes = {
+    showInputText: PropTypes.any,
+  };  
 
 export default ShowList

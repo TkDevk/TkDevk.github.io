@@ -1,17 +1,7 @@
-const CreateNew = ({todoText}) => {
-/*
-    const handleAddTask = (e) => {
-        let nuevaTask = {
-          id: uuidv4(),
-          title,
-          completed: false,
-        };
-        if (e.key.toLowerCase() === "enter") {
-          addTask(nuevaTask);
-          setTitle("");
-        }
-      };
-  */  
+import PropTypes from 'prop-types'
+
+
+const CreateNew = ({createTextTodo:createTodo}) => {
 
     return (   
         
@@ -25,12 +15,17 @@ const CreateNew = ({todoText}) => {
             id="cbox" 
             placeholder="Create a new todo..." 
             size="50" 
-            onChange={todoText}
-            onKeyDown={(e) => handleAddTask(e)}
+            onChange={createTodo}
             />
         </section>
+
         
     )
 
 }
+
+CreateNew.propTypes ={
+  createTextTodo : PropTypes.any,
+}
+
 export default CreateNew
