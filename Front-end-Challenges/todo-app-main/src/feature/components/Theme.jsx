@@ -1,46 +1,11 @@
-import { useState, useEffect } from "react";
+import PropTypes from "prop-types"
 
-const Theme = () => {
-  const setDarkMode = () => {
-    document.querySelector('.Body').setAttribute("data-theme","dark");
-    document.querySelector('.Create-new-container').setAttribute("data-theme","dark");   
-    document.querySelector('.Input-check-box').setAttribute("data-theme","dark");   
-    document.querySelector('.Check-TODO').setAttribute("data-theme","dark");   
-    document.querySelector('.Footer-filter').setAttribute("data-theme","dark");
-    document.querySelector('.Clear-todos').setAttribute("data-theme","dark");    
-    document.querySelector('.Todos-remain').setAttribute("data-theme","dark");
-    document.querySelector('.Justify-h6').setAttribute("data-theme","dark");    
-    document.querySelector('.TitleTODO').setAttribute("data-theme","dark");  
-    document.querySelector('.IconTheme').setAttribute("data-theme","dark"); 
-    document.querySelector('.TODO-list-container').setAttribute("data-theme","dark"); 
-    document.querySelector('.New-todo').setAttribute("data-theme","dark"); 
+const Theme = ({changeColor:changeColor, darkMode:darkMode}) => {
+  
 
-  }
-
- const setLight = ()=>{
-  document.querySelector('.Body').setAttribute("data-theme","light");
-  document.querySelector('.Create-new-container').setAttribute("data-theme","light");  
-  document.querySelector('.Input-check-box').setAttribute("data-theme","light");   
-  document.querySelector('.Check-TODO').setAttribute("data-theme","light");   
-  document.querySelector('.Footer-filter').setAttribute("data-theme","light");
-  document.querySelector('.Clear-todos').setAttribute("data-theme","light");    
-  document.querySelector('.Todos-remain').setAttribute("data-theme","light");
-  document.querySelector('.Justify-h6').setAttribute("data-theme","light");    
-  document.querySelector('.TitleTODO').setAttribute("data-theme","light"); 
-  document.querySelector('.IconTheme').setAttribute("data-theme","light"); 
-  document.querySelector('.TODO-list-container').setAttribute("data-theme","light"); 
-  document.querySelector('.New-todo').setAttribute("data-theme","light"); 
- }
  /**I had to use useEffect because its initial state it wasn't working, i had to click to twice in order to change the theme, so using useEffect i can assure that the darkMode state it will be charge as soon as the component is updated */
  
- const [darkMode, setDarkModeState] = useState(false);
- useEffect(() => {
-    darkMode?setDarkMode() : setLight();
-}, [darkMode]);
-  
- const changeColor = () => {
-  setDarkModeState((prevMode) => !prevMode);
-};
+
   return (
     <header className="ThemeTODO">
       <h1 className="TitleTODO">Todo</h1>
@@ -54,5 +19,9 @@ const Theme = () => {
     </header>
   )
 
+}
+Theme.propTypes={
+  changeColor:PropTypes.any, 
+  darkMode:PropTypes.any,
 }
 export default Theme

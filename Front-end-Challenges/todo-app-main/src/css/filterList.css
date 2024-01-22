@@ -13,9 +13,9 @@
     align-items: center;
 }
 .Clear-todos,.Todos-remain,.Justify-h6  h6{
-    color:var(--color-text);
+    color: var(--color-text-not);
     cursor: pointer;
     &:hover{
-        color: var(--BrightBlue)
+        color: var(--BrightBlue);
     }
 }
