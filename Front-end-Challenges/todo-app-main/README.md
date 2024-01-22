@@ -2,8 +2,8 @@
 
 ![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)
 
-  <h3>
-    <a href="http://notepaddevk.s3-website-us-east-1.amazonaws.com/">
+  <h3 align="center">
+    <a href="https://tk-devk-github-io.vercel.app/">
       Preview Site
     </a>
   </h3>
@@ -43,10 +43,6 @@ Your users should be able to:
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-
-
 ## Overview
 
 ### The challenge
@@ -86,7 +82,7 @@ Users should be able to:
 
 It's better to design first the father-children logic before start coding, i had several issues trying to pass functions through props, also you can level up your states through props so is pretty interesting how you can just pass everything
 
-GitHub pages is a tricky way to deploy your project, i had an issue related with the source of the Js and Css archive, the solution it's just add a . before the source path and that it's all.
+GitHub pages is a tricky way to deploy your project, i had an issue related with the source of the Js and Css archive, the solution it's just adding a ``.`` before the source path and that it's all.
 ```html
 <script type="module" crossorigin src="./assets/index-VrgCtCbo.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-hFi5bspx.css"></h1>
@@ -98,7 +94,7 @@ I keep working with css vanilla, i've trying to work with bootstrap or tailwind 
   color: var(--generalColor);
 }
 ```
-I'm using alot the ternary operator 
+I'm using the ternary operator alot  
 ```React
 const [checkClick, setCheckClick] = useState(false)
 
@@ -111,7 +107,7 @@ I can also build my project to send it to production only using two codes
 
 `yarn run build`
 
-This will create a `/dist` folder that for some reason server options like vercel o github pages doesn't recognized, so i had to create a new folder call todo and paste everything there
+This will create a `/dist` folder that for some reason server options like vercel o github pages doesn't recognize it, so i had to create a new folder call todo and paste everything there
 
 
 
@@ -121,8 +117,8 @@ I will keep learning about context, i tried to use context for the theme compone
 
 ### Useful resources
 
-- [React Context](https://react.dev/learn/scaling-up-with-reducer-and-context) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [React useEffect](https://react.dev/reference/react/useEffect) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [React Context](https://react.dev/learn/scaling-up-with-reducer-and-context) 
+- [React useEffect](https://react.dev/reference/react/useEffect) 
 
 ## Author
 
