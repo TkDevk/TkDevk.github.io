@@ -2,11 +2,13 @@
 
 ![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)
 
+  <h3>
+    <a href="http://notepaddevk.s3-website-us-east-1.amazonaws.com/">
+      Preview Site
+    </a>
+  </h3>
+
 ## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
 
 ## The challenge
@@ -27,11 +29,7 @@ Your users should be able to:
 - Toggle light and dark mode
 - **Bonus**: Drag and drop to reorder items on the list
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
-
 # Frontend Mentor - Todo app solution
-
-This is a solution to the [Todo app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -47,7 +45,7 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
@@ -63,23 +61,16 @@ Users should be able to:
 - Filter by all/active/complete todos
 - Clear all completed todos
 - Toggle light and dark mode
-- **Bonus**: Drag and drop to reorder items on the list
 
 ### Screenshot
 
 ![](./screenshot.PNG)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Vercel](https://tk-devk-github-io.vercel.app/)
+- Live Site URL: [GitHub Pages](https://tkdevk.github.io/Front-end-Challenges/todo-app-main/todo/)
 
 ## My process
 
@@ -88,61 +79,51 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+It's better to design first the father-children logic before start coding, i had several issues trying to pass functions through props, also you can level up your states through props so is pretty interesting how you can just pass everything
 
-To see how you can add code snippets, see below:
-
+GitHub pages is a tricky way to deploy your project, i had an issue related with the source of the Js and Css archive, the solution it's just add a . before the source path and that it's all.
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<script type="module" crossorigin src="./assets/index-VrgCtCbo.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-hFi5bspx.css"></h1>
 ```
+I keep working with css vanilla, i've trying to work with bootstrap or tailwind but i will stick to css for a while.
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+8:hover {
+  color: var(--generalColor);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+I'm using alot the ternary operator 
+```React
+const [checkClick, setCheckClick] = useState(false)
+
 ```
+I'm still learning about the pseudo classes, i think that i'm improving my css skills
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+I can also build my project to send it to production only using two codes
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+`npm install -g yarn`
+
+`yarn run build`
+
+This will create a `/dist` folder that for some reason server options like vercel o github pages doesn't recognized, so i had to create a new folder call todo and paste everything there
+
+
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I will keep learning about context, i tried to use context for the theme component so i can do the toggle but i didn't work for me, i was reading the concept and when i tried to apply it it didn't work, so i had to do it the way that i know and usually use.(DOM manipulation).
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [React Context](https://react.dev/learn/scaling-up-with-reducer-and-context) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [React useEffect](https://react.dev/reference/react/useEffect) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- GitHub - [TkDevk](https://github.com/TkDevk)
